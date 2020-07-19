@@ -1,0 +1,11 @@
+@comment $OpenBSD: PLIST,v 1.2 2020/01/23 00:36:56 bluhm Exp $
+@newgroup _iperf3:847
+@newuser _iperf3:847:_iperf3:daemon:iperf3 server:/nonexistent:/sbin/nologin
+@rcscript ${RCDIR}/iperf3
+@bin bin/iperf3
+include/iperf_api.h
+@static-lib lib/libiperf.a
+lib/libiperf.la
+@lib lib/libiperf.so.${LIBiperf_VERSION}
+@man man/man1/iperf3.1
+@man man/man3/libiperf.3
